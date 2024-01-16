@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-8daa1a0e","path":"/","title":"个人手册","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"主要内容","slug":"主要内容","link":"#主要内容","children":[]}],"git":{},"filePathRelative":"README.md"}');export{e as data};
