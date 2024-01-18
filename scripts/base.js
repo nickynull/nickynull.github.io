@@ -41,7 +41,7 @@ function $copy(str) {
         return
     }
     try {
-        navigator.clipboard.writeText1(str)
+        navigator.clipboard.writeText(str)
         window.$alert('复制完毕');
     }
     catch (ex) {

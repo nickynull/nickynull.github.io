@@ -1,0 +1,1 @@
+import{_ as t,o as s,c as a,a as e}from"./app-LK9Qy66c.js";const c={},l=e("details",{class:"custom-container details"},[e("summary",null,"标题"),e("p",null,"内容")],-1),o=[l];function n(_,r){return s(),a("div",null,o)}const d=t(c,[["render",n],["__file","tab-details.html.vue"]]);export{d as default};
