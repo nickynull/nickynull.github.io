@@ -28,7 +28,7 @@ function $alert(msg, timeout) {
     clearTimeout($bubbleTipsTimeoutId);
     $bubbleTipsTimeoutId = setTimeout(() => {
         tipsBlock.style.display = 'none';
-    }, timeout || 2000);
+    }, timeout || 3000);
 }
 
 /**
@@ -47,4 +47,26 @@ function $copy(str) {
     catch (ex) {
         window.$alert(`复制时产生异常：${ex}`);
     }
+}
+
+/**
+ * 设置缓存
+ * @param {*} key 缓存键值
+ * @param {*} obj 缓存内容
+ */
+function $setCache(key, obj) 
+{
+    const str = JSON.stringify(obj);
+    localStorage.setItem(key, str);
+}
+
+/**
+ * 获取缓存
+ * @param {*} key 缓存键值
+ */
+function $getCache(key) 
+{
+    const str = localStorage.getItem(key);
+    const obj = JSON.parse(str);
+    return obj;
 }
