@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-4aff2bf7","path":"/others/Markdown.html","title":"Markdown","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"非常规用法","slug":"非常规用法","link":"#非常规用法","children":[{"level":3,"title":"图片居中","slug":"图片居中","link":"#图片居中","children":[]}]}],"git":{},"filePathRelative":"others/Markdown.md"}');export{e as data};
