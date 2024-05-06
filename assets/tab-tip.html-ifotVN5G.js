@@ -1,0 +1,1 @@
+import{_ as e,o as c,c as s,a as t}from"./app-soFCekaR.js";const o={},a=t("div",{class:"custom-container tip"},[t("p",{class:"custom-container-title"},"标题"),t("p",null,"内容")],-1),n=[a];function _(i,l){return c(),s("div",null,n)}const p=e(o,[["render",_],["__file","tab-tip.html.vue"]]);export{p as default};

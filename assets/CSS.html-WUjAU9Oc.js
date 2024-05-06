@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-186fbeed","path":"/webs/CSS.html","title":"CSS","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"CSS换行","slug":"css换行","link":"#css换行","children":[{"level":3,"title":"CSS强制换行","slug":"css强制换行","link":"#css强制换行","children":[]}]}],"git":{},"filePathRelative":"webs/CSS.md"}');export{e as data};
