@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-000ee210","path":"/webs/vuepress/tab-warning.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"webs/vuepress/tab-warning.md"}');export{e as data};

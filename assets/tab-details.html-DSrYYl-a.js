@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-e873a87e","path":"/webs/codes/vuepress/tab-details.html","title":"","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"webs/codes/vuepress/tab-details.md"}');export{e as data};

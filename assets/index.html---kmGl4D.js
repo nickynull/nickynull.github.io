@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-41928a2a","path":"/webs/javascript/","title":"JavaScript","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"JavaScript数学工具","slug":"javascript数学工具","link":"#javascript数学工具","children":[]}],"git":{},"filePathRelative":"webs/javascript/README.md"}');export{a as data};

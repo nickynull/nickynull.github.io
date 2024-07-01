@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-25809fba","path":"/webs/css/","title":"CSS","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"CSS换行","slug":"css换行","link":"#css换行","children":[{"level":3,"title":"CSS强制换行","slug":"css强制换行","link":"#css强制换行","children":[]}]}],"git":{},"filePathRelative":"webs/css/README.md"}');export{e as data};
