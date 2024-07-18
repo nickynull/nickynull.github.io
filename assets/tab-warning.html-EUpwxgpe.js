@@ -1,0 +1,1 @@
+import{_ as e,o as n,c,a as t}from"./app-a8PO4yvU.js";const a={},s=t("div",{class:"custom-container warning"},[t("p",{class:"custom-container-title"},"标题"),t("p",null,"内容")],-1),o=[s];function r(_,i){return n(),c("div",null,o)}const d=e(a,[["render",r],["__file","tab-warning.html.vue"]]);export{d as default};
