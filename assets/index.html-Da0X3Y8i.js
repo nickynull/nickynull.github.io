@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-f1f0a9b2","path":"/webs/vue2/AutoScroll/","title":"自动滚动组件","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"使用示例","slug":"使用示例","link":"#使用示例","children":[]},{"level":2,"title":"代码","slug":"代码","link":"#代码","children":[]}],"git":{},"filePathRelative":"webs/vue2/AutoScroll/README.md"}');export{e as data};
