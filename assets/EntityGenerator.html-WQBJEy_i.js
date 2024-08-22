@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-3e739a36","path":"/tools/EntityGenerator.html","title":"简单实体对象生成器","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tools/EntityGenerator.md"}');export{t as data};

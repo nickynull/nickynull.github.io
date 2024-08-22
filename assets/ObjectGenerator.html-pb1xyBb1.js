@@ -1,1 +1,0 @@
-const t=JSON.parse('{"key":"v-0b136edc","path":"/tools/ObjectGenerator.html","title":"对象生成器","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tools/ObjectGenerator.md"}');export{t as data};
