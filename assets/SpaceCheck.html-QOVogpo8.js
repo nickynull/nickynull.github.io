@@ -1,0 +1,30 @@
+import{_ as n,o as s,c as a,j as e}from"./app-aRFa_rIQ.js";const p={},t=e(`<h1 id="空间检查" tabindex="-1"><a class="header-anchor" href="#空间检查" aria-hidden="true">#</a> 空间检查</h1><h2 id="查看最占空间的表" tabindex="-1"><a class="header-anchor" href="#查看最占空间的表" aria-hidden="true">#</a> 查看最占空间的表</h2><div class="language-sql line-numbers-mode" data-ext="sql"><pre class="language-sql"><code><span class="token keyword">WITH</span> w1 <span class="token keyword">AS</span>
+ <span class="token punctuation">(</span><span class="token keyword">SELECT</span> ds<span class="token punctuation">.</span>owner<span class="token punctuation">,</span>
+         ds<span class="token punctuation">.</span>segment_name<span class="token punctuation">,</span>
+         ds<span class="token punctuation">.</span>segment_type<span class="token punctuation">,</span>
+         ds<span class="token punctuation">.</span>tablespace_name<span class="token punctuation">,</span>
+         ds<span class="token punctuation">.</span>bytes
+    <span class="token keyword">FROM</span> dba_segments ds
+   <span class="token keyword">WHERE</span> ds<span class="token punctuation">.</span>segment_type <span class="token operator">NOT</span> <span class="token operator">IN</span> <span class="token punctuation">(</span><span class="token string">&#39;LOBSEGMENT&#39;</span><span class="token punctuation">)</span>
+  <span class="token keyword">UNION</span> <span class="token keyword">ALL</span>
+  <span class="token keyword">SELECT</span> ds<span class="token punctuation">.</span>owner<span class="token punctuation">,</span>
+         ds2<span class="token punctuation">.</span>segment_name <span class="token keyword">AS</span> segment_name<span class="token punctuation">,</span>
+         ds<span class="token punctuation">.</span>segment_type<span class="token punctuation">,</span>
+         ds<span class="token punctuation">.</span>tablespace_name<span class="token punctuation">,</span>
+         ds<span class="token punctuation">.</span>bytes
+    <span class="token keyword">FROM</span> dba_segments ds<span class="token punctuation">,</span> dba_lobs dl<span class="token punctuation">,</span> dba_segments ds2
+   <span class="token keyword">WHERE</span> ds<span class="token punctuation">.</span>owner <span class="token operator">=</span> dl<span class="token punctuation">.</span>owner
+     <span class="token operator">AND</span> ds<span class="token punctuation">.</span>segment_name <span class="token operator">=</span> dl<span class="token punctuation">.</span>segment_name
+     <span class="token operator">AND</span> dl<span class="token punctuation">.</span>owner <span class="token operator">=</span> ds2<span class="token punctuation">.</span>owner
+     <span class="token operator">AND</span> dl<span class="token punctuation">.</span>table_name <span class="token operator">=</span> ds2<span class="token punctuation">.</span>segment_name<span class="token punctuation">)</span><span class="token punctuation">,</span>
+w2 <span class="token keyword">AS</span>
+ <span class="token punctuation">(</span><span class="token keyword">SELECT</span> w1<span class="token punctuation">.</span>owner<span class="token punctuation">,</span>
+         w1<span class="token punctuation">.</span>segment_name<span class="token punctuation">,</span>
+         w1<span class="token punctuation">.</span>segment_type<span class="token punctuation">,</span>
+         w1<span class="token punctuation">.</span>tablespace_name <span class="token keyword">as</span> tbs<span class="token punctuation">,</span>
+         <span class="token function">SUM</span><span class="token punctuation">(</span>w1<span class="token punctuation">.</span>bytes<span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token operator">/</span> <span class="token number">1024</span> <span class="token keyword">AS</span> size_g
+    <span class="token keyword">FROM</span> w1
+   <span class="token keyword">GROUP</span> <span class="token keyword">BY</span> w1<span class="token punctuation">.</span>owner<span class="token punctuation">,</span> w1<span class="token punctuation">.</span>segment_name<span class="token punctuation">,</span> w1<span class="token punctuation">.</span>segment_type<span class="token punctuation">,</span> w1<span class="token punctuation">.</span>tablespace_name
+   <span class="token keyword">ORDER</span> <span class="token keyword">BY</span> <span class="token number">5</span> <span class="token keyword">DESC</span><span class="token punctuation">)</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> w2 <span class="token keyword">WHERE</span> rownum <span class="token operator">&lt;</span> <span class="token number">101</span><span class="token punctuation">;</span>
+</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,3),o=[t];function c(l,i){return s(),a("div",null,o)}const d=n(p,[["render",c],["__file","SpaceCheck.html.vue"]]);export{d as default};
