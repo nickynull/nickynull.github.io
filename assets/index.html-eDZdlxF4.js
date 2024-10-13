@@ -1,0 +1,1 @@
+import{_ as t,o,c as a,a as e,d as c}from"./app-06tck_FE.js";const n={},s=e("h1",{id:"数据库通识",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#数据库通识","aria-hidden":"true"},"#"),c(" 数据库通识")],-1),r=e("blockquote",null,[e("p",null,"数据库通用概念与知识")],-1),_=[s,r];function d(l,i){return o(),a("div",null,_)}const u=t(n,[["render",d],["__file","index.html.vue"]]);export{u as default};
