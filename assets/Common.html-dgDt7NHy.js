@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-1cacfabc","path":"/webs/vue2/Common.html","title":"通识","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"清空界面数据","slug":"清空界面数据","link":"#清空界面数据","children":[]}],"git":{},"filePathRelative":"webs/vue2/Common.md"}');export{e as data};

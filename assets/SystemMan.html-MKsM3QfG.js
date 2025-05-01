@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-3c92b841","path":"/servers/linux/SystemMan.html","title":"系统管理","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"常用通用参数","slug":"常用通用参数","link":"#常用通用参数","children":[]},{"level":2,"title":"查看系统信息","slug":"查看系统信息","link":"#查看系统信息","children":[]}],"git":{},"filePathRelative":"servers/linux/SystemMan.md"}');export{e as data};

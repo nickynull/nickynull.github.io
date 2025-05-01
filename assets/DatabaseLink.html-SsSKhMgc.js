@@ -1,8 +1,0 @@
-import{_ as n,o as s,c as a,j as e}from"./app-06tck_FE.js";const i={},d=e(`<h1 id="dblink" tabindex="-1"><a class="header-anchor" href="#dblink" aria-hidden="true">#</a> DbLink</h1><h2 id="创建dblink" tabindex="-1"><a class="header-anchor" href="#创建dblink" aria-hidden="true">#</a> 创建DbLink</h2><div class="language-sql line-numbers-mode" data-ext="sql"><pre class="language-sql"><code><span class="token keyword">create</span> <span class="token keyword">database</span>  link blink1 <span class="token keyword">connect</span> <span class="token keyword">to</span> dbName identified <span class="token keyword">by</span> dbPassword <span class="token keyword">using</span> <span class="token string">&#39;(DESCRIPTION =(ADDRESS_LIST =(ADDRESS =(PROTOCOL = TCP)(HOST = 192.168.1.106)(PORT = 1521)))(CONNECT_DATA =(SERVICE_NAME = orcl)))&#39;</span><span class="token punctuation">;</span>
-<span class="token comment">--blink1 ： 表示dblink名字</span>
-<span class="token comment">--dbName ：表示 远程数据库的用户</span>
-<span class="token comment">--dbPassword：表示 远程数据库的密码</span>
-<span class="token comment">--HOST ： 表示远程数据库IP</span>
-<span class="token comment">--PORT ： 表示远程数据库端口</span>
-<span class="token comment">--SERVICE_NAME ： 远程数据库的实例名</span>
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,3),c=[d];function l(t,o){return s(),a("div",null,c)}const p=n(i,[["render",l],["__file","DatabaseLink.html.vue"]]);export{p as default};

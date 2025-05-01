@@ -1,1 +1,0 @@
-const a=JSON.parse('{"key":"v-5076d4ac","path":"/tools/CamelCaseTrans.html","title":"驼峰变量转换器","lang":"en-US","frontmatter":{},"headers":[],"git":{},"filePathRelative":"tools/CamelCaseTrans.md"}');export{a as data};

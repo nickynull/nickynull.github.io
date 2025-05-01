@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-5d84de53","path":"/servers/linux/","title":"Linux","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"通用快捷键：","slug":"通用快捷键","link":"#通用快捷键","children":[]}],"git":{},"filePathRelative":"servers/linux/README.md"}');export{e as data};

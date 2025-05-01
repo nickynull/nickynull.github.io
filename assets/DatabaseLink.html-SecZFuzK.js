@@ -1,1 +1,0 @@
-const a=JSON.parse('{"key":"v-90f21ffa","path":"/databases/oracle/DatabaseLink.html","title":"DbLink","lang":"en-US","frontmatter":{},"headers":[{"level":2,"title":"创建DbLink","slug":"创建dblink","link":"#创建dblink","children":[]}],"git":{},"filePathRelative":"databases/oracle/DatabaseLink.md"}');export{a as data};
